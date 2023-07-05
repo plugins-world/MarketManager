@@ -1,0 +1,18 @@
+{
+    "fskey": "MarketManager",
+    "type": 1,
+    "name": "MarketManager",
+    "description": "MarketManager plugin made by fresns",
+    "author": "Fresns",
+    "authorLink": "https://fresns.org",
+    "version": "1.0.0",
+    "scene": [],
+    "accessPath": "/market-manager",
+    "settingsPath": "/market-manager/setting/",
+    "providers": [
+        "Plugins\\MarketManager\\Providers\\MarketManagerServiceProvider",
+        "Plugins\\MarketManager\\Providers\\ExceptionServiceProvider"
+    ],
+    "autoloadFiles": [],
+    "aliases": []
+}
