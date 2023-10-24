@@ -1,0 +1,63 @@
+{
+    "name": "plugins-world/market-manager",
+    "description": "MarketManager plugin made by fresns",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jarvis Tang",
+            "email": "jarvis.okay@gmail.com",
+            "homepage": "https://github.com/jarvis-tang",
+            "role": "Creator"
+        },
+        {
+            "name": "mouyong",
+            "email": "my24251325@gmail.com",
+            "homepage": "https://github.com/mouyong",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Plugins\\MarketManager\\": "app",
+            "Plugins\\MarketManager\\Database\\Factories\\": "database/factories/",
+            "Plugins\\MarketManager\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Plugins\\MarketManager\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">= 8.0",
+        "plugins-world/laravel-config": "^2.0 | dev-master",
+        "fresns/cmd-word-manager": "^1.0",
+        "fresns/market-manager": "^3.x-dev",
+        "fresns/plugin-manager": "^3.x-dev"
+    },
+    "require-dev": {
+        "orangehill/iseed": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Plugins\\MarketManager\\Providers\\MarketManagerServiceProvider",
+                "Plugins\\MarketManager\\Providers\\ExceptionServiceProvider"
+            ]
+        }
+    },
+    "repositories": {
+        "cmd-word-manager": {
+            "type": "vcs",
+            "url": "git@gitee.com:fresns/cmd-word-manager.git"
+        },
+        "plugin-manager": {
+            "type": "vcs",
+            "url": "git@gitee.com:fresns/plugin-manager.git"
+        },
+        "market-manager": {
+            "type": "vcs",
+            "url": "git@gitee.com:fresns/market-manager.git"
+        }
+    }
+}
